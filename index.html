@@ -1,40 +1,54 @@
 <!DOCTYPE html>
-<html lang='en' dir='ltr'>
-  <head>
-    <title>DE LAS NUBES</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="icons" type="image/png" href="./images/cloud.ico"> -->
-  </head>
-  <body>
-      <nav class="top-container">
-        <section class="user-songs">
-          <button class="share-button button">share</button>
-          <!-- insert img tag in bet. buttons -->
-          <button class="playlist-button button">playlist</button>
-          <button class="personal-videos button">personal videos</button>
-        </section>
-        <section class="login-and-logo">
-          <button class="login-option"></button>
-          <!-- <img class="logo"/> -->
-        </section>
-      </nav>
-    <main>
-      <h1>SONGS</h1>
-      <article class="box" id="new-box">
-        <section class="top-box one">
-          <button class="reply-button">
-            <!-- <img class="" src="" alt="" /> -->
-          </button>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>DE LAS NUBES</title>
+</head>
+<body>
+  <nav class="header">
+    <section class="user-links">
+      <ul>
+        <li>
+          <a class="share-link" href="#">Share</a>
+        <!-- insert img tag in bet. buttons -->
+        </li>
+        <li>
+          <a class="playlist-link" href="#">Playlist</a>
+        <!-- insert img tag in bet. buttons -->
+        </li>
+        <li>
+          <a class="videos-link" href="#">Videos</a>
+        <!-- insert img tag in bet. buttons -->
+        </li>
+      </ul>
+    </section>
+    <section class="login-and-logo">
+      <ul class="admin-login">Admin Login</ul>
+      <h1 class="site-logo">DE LAS NUBES</h1>
+      <!-- <img class="logo"/> -->
+    </section>
+  </nav>
+  <main>
+    <h1 class="songs-title">SONGS</h1>
+    <article class="song-card" id="new-card">
+      <div class="top-box" id="one">
+        <button class="reply-button">
           <!-- <img class="" src="" alt="" /> -->
-        </section>
-        <section>
-          <h2 class="name-of-song">SONG TITLE</h2>
-          <p>Date Goes Here</p>
-          <article class="spotify-link"></article>
-        </section>
-      </article>
-    </main>
-  </body>
+        </button>
+        <!-- <img class="" src="" alt="" /> -->
+      </div>
+      <section>
+        <h2 class="name-of-song">SONG TITLE</h2>
+        <p>Date Goes Here</p>
+        <article class="spotify-link"></article>
+      </section>
+    </article>
+  </main>
+</body>
 </html>

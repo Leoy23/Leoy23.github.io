@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
   height: 100%;
   }
   body {
@@ -27,4 +27,10 @@ html, body {
   }
   #root, #__next {
   isolation: isolate;
+  } */
+  * {
+    border: 1px solid blue;
+  }
+  body {
+    font-family: 'Josefin Sans', sans-serif;
   }
