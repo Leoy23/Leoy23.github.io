@@ -1,45 +1,207 @@
-body {
-  font-family: 'Josefin Sans', sans-serif;
-  height: 100%;
-}
-* {
-  border: 1px solid purple;
-}
-/* html, body {
-  height: 100%;
-  font-family: 'Josefin Sans', sans-serif;
-  }
+/* COLOR PALATTE */
+/* 
+#071C34 - Dark Blue - TEXT COLOR
+#144361 - Dark Teal - HEADER COLOR
+#C0CED1 - Light Gray Blue - MAIN BACKGROUND COLOR / HEADER TEXT
+#87B2CC - Light Blue - CARD COLOR
+#6298BC - Light/Dark Blue - TBD 
 
-body {
+// ADDITIONAL COLORS FOR USE
+#F2889B - Light Pink
+#A65874 - Mauve Pink 
+#035AA6 - Dark Blue
+#034C8C - Navy Blue
+#03588C - Dark Teal
+ */
+
+
+/* .flex {
+  display: flex;
+} 
+add flex class to items you want to flex
+*/
+
+
+ body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, ‘Roboto’, ‘Oxygen’,
-  ‘Ubuntu’, ‘Cantarell’, ‘Fira Sans’, ‘Droid Sans’, ‘Helvetica Neue’,
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #C0CED1;
+  color: #071C34;
+  overflow: scroll;
+  }
+
+/* * {
+  border: 1px solid rgb(145, 89, 16);
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #144361;
+  color: #C0CED1;
+  height: 15vh;
+  border-color: 2px solid #144361;
+  padding: 5px 5px 5px 5px;
+}
+a:hover {
+  background-color: #A65874;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  color: #C0CED1;
+}
+
+.login-and-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-login {
+  display: flex;
+  margin-top: -2px;
+  align-items: center;
+  padding: 5px;
+}
+
+.admin-username {
+  font-size: smaller;
+  padding: 7px;
+}
+
+.site-logo {
+  display: flex;
+  font-size: 25px;
+  background: linear-gradient(to right, #144361 45%, #C0CED1);
+  opacity: 50%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2px 5px;
+  margin-right: 34px;
+  margin-left: -35px;
+}
+
+.link {
+  margin-right: 28px;
+  color: #C0CED1;
+  font-size: large;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.page-title {
+  display: flex;
+  padding: .5em;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  background-color: #C0CED1;
+}
+
+.song-card {
+  border: 1px solid black;
+  width: 300px;
+  height: 400px;
+  border-radius: 2.5%;
+  padding: 5px 10px;
+  padding-bottom: 2.5px;
+  box-shadow: #071C34;
+}
+
+.top-card {
+  border: 5px solid black;
+  display: flex;
+  align-items: flex-start;
+  background-image: url(./images/Larue-headshot.svg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.lower-cards {
+  padding-top: 2.5px;
+  margin-top: 30px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~Images~~~~~~~~~~~~~~~~~~~~~~~~ */
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30px;
+  background-color: #144361;
+  color: #C0CED1;
+  position: relative;
+  padding: 2px 5px;
+}
+
+.down-arrow {
+  display: flex;
+  position: relative;
   box-sizing: border-box;
-  line-height: 1.5;
-  }
+  background-color: #144361;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, ‘Courier New’,
-  monospace;
-  }
+.icon-2 {
+  height: 20px;
+  background-color: #144361;
+  padding: 2px 3px;
+}
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-  }
+.icon-3 {
+  display: flex;
+  height: 15px;
+  color: #C0CED1;
+  position: absolute;
+}
 
-input, button, textarea, select {
-  font: inherit;
-  }
+.share-icon {
+  display: flex;  
+  justify-content: flex-start;
+  height: 25px;
+  width: 25px;
+}
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-  }
+.overlay {
+  height: 40%;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
-#root, #__next {
-  isolation: isolate;
-  } 
-   */
+/* ~~~~~~~~~~ TEXT ~~~~~~~~~~ */
+.views {
+  color: #08c8f3;
+  margin-left: 244px;
+  text-shadow: 15px 15px 25px #1863b9;
+  font-size: 20px;
+  font-weight:900;
+}
