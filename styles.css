@@ -127,14 +127,15 @@ main {
   border: 1px solid black;
   width: 300px;
   height: 400px;
-  border-radius: 2.5%;
-  padding: 5px 10px;
+  border-radius: 3%;
+  padding: 5px -1px;
   padding-bottom: 2.5px;
-  box-shadow: #071C34;
+  box-shadow: 10px 5px 5px #071C34;
+  box-shadow: #A65874;
 }
 
 .top-card {
-  border: 5px solid black;
+  border: 1px solid black;
   display: flex;
   align-items: flex-start;
   background-image: url(./images/Larue-headshot.svg);
@@ -143,11 +144,17 @@ main {
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0;
+  border-radius: 4%;
+  opacity: 0.2em;
 }
 
 .lower-cards {
-  padding-top: 2.5px;
+  padding-top: -8.5px;
   margin-top: 30px;
+}
+
+.bottom-card {
+  padding: 10px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~Images~~~~~~~~~~~~~~~~~~~~~~~~ */
 .icon {
@@ -183,8 +190,10 @@ main {
 .share-icon {
   display: flex;  
   justify-content: flex-start;
-  height: 25px;
+  height: 30px;
   width: 25px;
+  margin-top: -3px;
+  margin-left: 10px;
 }
 
 .overlay {
@@ -199,9 +208,17 @@ main {
 
 /* ~~~~~~~~~~ TEXT ~~~~~~~~~~ */
 .views {
-  color: #08c8f3;
-  margin-left: 244px;
-  text-shadow: 15px 15px 25px #1863b9;
+  color: #A65874;
+  margin-left: 233px;
+  text-shadow: 25px 25px 40px #A65874;
   font-size: 20px;
   font-weight:900;
+  font-family: 'Josefin Sans', sans-serif;
+  text-emphasis-color: #A65874;
+  /* background-color: #A65874; */
+}
+
+h2 {
+  color: #A65874;
+  text-shadow: 10px 10px 10px #F2889B;
 }
