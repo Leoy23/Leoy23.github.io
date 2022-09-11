@@ -1,7 +1,7 @@
 /* COLOR PALATTE */
 /* 
 #071C34 - Dark Blue - TEXT COLOR
-#144361 - Dark Teal - HEADER COLOR
+#3895D3 - Sky Blue - HEADER COLOR
 #C0CED1 - Light Gray Blue - MAIN BACKGROUND COLOR / HEADER TEXT
 #87B2CC - Light Blue - CARD COLOR
 #6298BC - Light/Dark Blue - TBD 
@@ -15,12 +15,6 @@
  */
 
 
-/* .flex {
-  display: flex;
-} 
-add flex class to items you want to flex
-*/
-
 
  body {
   display: flex;
@@ -29,24 +23,21 @@ add flex class to items you want to flex
   height: 100%;
   width: 100%;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #C0CED1;
+  background-color: #A65874;
   color: #071C34;
   overflow: scroll;
   }
 
-/* * {
-  border: 1px solid rgb(145, 89, 16);
-} */
-
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #144361;
+  background-color: #3895D3;
   color: #C0CED1;
   height: 15vh;
-  border-color: 2px solid #144361;
   padding: 5px 5px 5px 5px;
+  border: 2px solid #248fd7
 }
+
 a:hover {
   background-color: #A65874;
 }
@@ -76,10 +67,7 @@ nav {
 }
 
 .site-logo {
-  display: flex;
   font-size: 25px;
-  background: linear-gradient(to right, #144361 45%, #C0CED1);
-  opacity: 50%;
 }
 
 ul {
@@ -107,11 +95,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  background-color: #3895D3;
 }
 
 .page-title {
-  display: flex;
-  padding: .5em;
+  padding: 10px;
+  color: #071C34;
 }
 
 .card-container {
@@ -120,10 +109,12 @@ main {
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  background-color: #C0CED1;
+  background: linear-gradient(to top, #A65874 24%, #3895D3);
+  margin: 0;
 }
 
 .song-card {
+  background-color: #d2e7eb;
   border: 1px solid black;
   width: 300px;
   height: 400px;
@@ -135,17 +126,16 @@ main {
 }
 
 .top-card {
-  border: 1px solid black;
   display: flex;
   align-items: flex-start;
   background-image: url(./images/Larue-headshot.svg);
   background-position: center;
   background-size: cover;
   padding-top: 15px;
-  padding-bottom: 15px;
-  margin: 0;
-  border-radius: 4%;
-  opacity: 0.2em;
+  padding-bottom: 10px;
+  border-radius: 5%;
+  opacity: 0.7;
+  box-shadow: 10px #87B2CC;
 }
 
 .lower-cards {
@@ -154,14 +144,27 @@ main {
 }
 
 .bottom-card {
-  padding: 10px;
+  padding: 15px 10px;
+  margin-top: -13px;
 }
+
+.link-container {
+  border: 1px grey;
+  background-color: grey;
+  opacity: 0.7;
+  border-radius: 2.5%;
+  height: auto;
+  width: 70px;
+  padding: 5px 5px;
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~Images~~~~~~~~~~~~~~~~~~~~~~~~ */
 .icon {
   display: flex;
   flex-wrap: wrap;
   height: 30px;
-  background-color: #144361;
+  background-color: #3895D3;
   color: #C0CED1;
   position: relative;
   padding: 2px 5px;
@@ -171,12 +174,12 @@ main {
   display: flex;
   position: relative;
   box-sizing: border-box;
-  background-color: #144361;
+  background-color: #3895D3;
 }
 
 .icon-2 {
   height: 20px;
-  background-color: #144361;
+  background-color: #3895D3;
   padding: 2px 3px;
 }
 
@@ -208,17 +211,49 @@ main {
 
 /* ~~~~~~~~~~ TEXT ~~~~~~~~~~ */
 .views {
-  color: #A65874;
-  margin-left: 233px;
+  color: #C0CED1;
+  border:#A65874;
+  background-color: #144361;
+  margin-left: 219px;
   text-shadow: 25px 25px 40px #A65874;
   font-size: 20px;
   font-weight:900;
-  font-family: 'Josefin Sans', sans-serif;
-  text-emphasis-color: #A65874;
-  /* background-color: #A65874; */
+  padding: 5px;
 }
 
 h2 {
   color: #A65874;
   text-shadow: 10px 10px 10px #F2889B;
+  font-size:large;
+}
+
+.spotify-link {
+  color: #071C34;
+}
+
+h3 {
+  margin-top: -16px;
+}
+
+.date {
+  margin-top: -7px;
+}
+
+span {
+  color: #A65874;
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  font-weight: 400;
+}
+
+.span-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 800;
+  font-size: large;
+}
+
+.small {
+  font-size: small;
 }
